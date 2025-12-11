@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Green School - Kelompok 10</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo-text">Kelompok 10 PFM SMK TIP</div>
+        <div class="header-logos">
+            <img src="assets/img/logo1.png" alt="Logo 1">
+            <img src="assets/img/logo2.png" alt="Logo 2">
+            <img src="assets/img/logo3.png" alt="Logo 3">
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('assets/img/slide1.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/img/slide2.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/img/slide3.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/img/slide4.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/img/slide5.jpg');"></div>
+            <div class="overlay"></div>
+        </div>
+
+        <div class="hero-content container">
+            <div class="hero-text fade-in-left">
+                <h1>PROJECT KELOMPOK 10 <br> SMK TI PEMBANGUNAN CIMAHI <br> <span class="highlight">PFM 2025</span></h1>
+                <p>Mewujudkan Lingkungan Sekolah yang Hijau dan Berkelanjutan.</p>
+                <a href="#projects" class="btn">Lihat Project Kami</a>
+            </div>
+            <div class="hero-image fade-in-right">
+                <img src="assets/img/group-photo.png" alt="Foto Kelompok 10">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Hasil Karya Kami</h2>
+            <div class="project-grid">
+                <div class="project-card reveal" onclick="openModal('Project Daur Ulang', 'Deskripsi detail tentang bagaimana kami mendaur ulang sampah plastik menjadi barang berguna.', 'assets/img/proj1.jpg')">
+                    <img src="assets/img/proj1.jpg" alt="Project 1">
+                    <div class="card-info">
+                        <h3>Daur Ulang Sampah</h3>
+                        <p>Klik untuk detail</p>
+                    </div>
+                </div>
+                <div class="project-card reveal" onclick="openModal('Vertical Garden', 'Pembuatan taman vertikal untuk menghemat lahan dan menambah oksigen.', 'assets/img/proj2.jpg')">
+                    <img src="assets/img/proj2.jpg" alt="Project 2">
+                    <div class="card-info">
+                        <h3>Vertical Garden</h3>
+                        <p>Klik untuk detail</p>
+                    </div>
+                </div>
+                <div class="project-card reveal" onclick="openModal('Hemat Energi', 'Sistem otomatisasi lampu kelas untuk menghemat listrik sekolah.', 'assets/img/proj3.jpg')">
+                    <img src="assets/img/proj3.jpg" alt="Project 3">
+                    <div class="card-info">
+                        <h3>Kampanye Hemat Energi</h3>
+                        <p>Klik untuk detail</p>
+                    </div>
+                </div>
+                <div class="project-card reveal" onclick="openModal('Komposting', 'Pengolahan sampah organik kantin menjadi pupuk kompos.', 'assets/img/proj4.jpg')">
+                    <img src="assets/img/proj4.jpg" alt="Project 4">
+                    <div class="card-info">
+                        <h3>Pembuatan Kompos</h3>
+                        <p>Klik untuk detail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pros-cons" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Analisis Project</h2>
+            <div class="pros-cons-container">
+                <div class="box pros reveal">
+                    <h3><i class="fas fa-check-circle"></i> Manfaat</h3>
+                    <ul>
+                        <li>Meningkatkan kesadaran lingkungan siswa.</li>
+                        <li>Mengurangi volume sampah di sekolah.</li>
+                        <li>Menciptakan suasana belajar yang asri.</li>
+                        <li>Menghasilkan produk bernilai ekonomis.</li>
+                    </ul>
+                </div>
+                <div class="box cons reveal">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Kekurangan/Tantangan</h3>
+                    <ul>
+                        <li>Memerlukan waktu perawatan yang rutin.</li>
+                        <li>Biaya awal implementasi cukup tinggi.</li>
+                        <li>Butuh partisipasi aktif seluruh warga sekolah.</li>
+                        <li>Ketergantungan pada cuaca (untuk tanaman).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="posters" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Poster Kampanye</h2>
+            <div class="poster-grid">
+                <img src="assets/img/poster1.jpg" class="poster-item reveal" alt="Poster 1">
+                <img src="assets/img/poster2.jpg" class="poster-item reveal" alt="Poster 2">
+                <img src="assets/img/poster3.jpg" class="poster-item reveal" alt="Poster 3">
+                <img src="assets/img/poster4.jpg" class="poster-item reveal" alt="Poster 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="infographic" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Infografis Data</h2>
+            <div class="infographic-wrapper reveal">
+                <img src="assets/img/infographic.jpg" alt="Infografis Lengkap">
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Video Dokumentasi</h2>
+            <div class="video-wrapper reveal">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <h2>Thanks For Support</h2>
+            <div class="support-logos">
+                <img src="assets/img/support1.png" alt="Support 1">
+                <img src="assets/img/support2.png" alt="Support 2">
+                </div>
+            <p>&copy; 2025 Kelompok 10 SMK TI Pembangunan Cimahi.</p>
+        </div>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImg" src="" alt="">
+            <h2 id="modalTitle">Judul Project</h2>
+            <p id="modalDesc">Keterangan project...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
